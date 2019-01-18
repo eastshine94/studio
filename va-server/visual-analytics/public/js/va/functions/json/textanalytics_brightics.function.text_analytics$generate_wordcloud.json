@@ -1,0 +1,73 @@
+{
+    "script": {
+        "type": "",
+        "content": ""
+    },
+    "specJson": {
+        "category": "textanalytics",
+        "func": "brightics.function.text_analytics$generate_wordcloud",
+        "name": "brightics.function.text_analytics$generate_wordcloud",
+        "context": "python",
+        "label": "Generate Word Cloud",
+        "description": "",
+        "tags": [
+            "wordcloud"
+        ],
+        "version": "3.6",
+        "inputs": {
+            "table": ""
+        },
+        "outputs": {
+            "result": ""
+        },
+        "meta": {
+            "table": {
+                "type": "table"
+            },
+            "result": {
+                "type": "model"
+            }
+        },
+        "params": [
+            {
+                "id": "input_col",
+                "label": "Input Column",
+                "description": "Input column",
+                "mandatory": true,
+                "items": [],
+                "visibleOption": [],
+                "control": "ColumnSelector",
+                "columnType": [],
+                "validation": [],
+                "multiple": false
+            },
+            {
+                "id": "width",
+                "label": "Width",
+                "description": "Width",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "placeHolder": "640",
+                "type": "Double"
+            },
+            {
+                "id": "height",
+                "label": "Height",
+                "description": "Height",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "placeHolder": "480",
+                "type": "Double"
+            }
+        ]
+    },
+    "md": ""
+}

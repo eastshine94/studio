@@ -1,0 +1,113 @@
+{
+    "script": {
+        "type": "",
+        "content": ""
+    },
+    "specJson": {
+        "category": "textanalytics",
+        "func": "brightics.function.tfidf$tfidf_train13237",
+        "name": "brightics.function.tfidf$tfidf_train",
+        "context": "python",
+        "label": "TFIDF Train",
+        "description": "",
+        "tags": [
+            "TFIDF"
+        ],
+        "version": "3.6",
+        "outputs": {
+            "out_table": "",
+            "fit_model": ""
+        },
+        "meta": {
+            "table": {
+                "type": "table"
+            },
+            "out_table": {
+                "type": "table"
+            },
+            "fit_model": {
+                "type": "model"
+            }
+        },
+        "params": [
+            {
+                "id": "input_col",
+                "label": "Input Column",
+                "description": "Input column",
+                "mandatory": true,
+                "items": [],
+                "visibleOption": [],
+                "control": "ColumnSelector",
+                "columnType": [
+                    "String"
+                ],
+                "validation": [],
+                "multiple": false
+            },
+            {
+                "id": "idf_weighting_scheme",
+                "label": "IDF Weighting Scheme",
+                "description": "IDF weighting scheme",
+                "mandatory": false,
+                "items": [
+                    {
+                        "label": "Unary",
+                        "value": "unary",
+                        "default": true
+                    },
+                    {
+                        "label": "Inverse Document Frequency",
+                        "value": "idf",
+                        "default": false
+                    }
+                ],
+                "visibleOption": [],
+                "control": "RadioButton",
+                "columnType": [],
+                "validation": []
+            },
+            {
+                "id": "min_df",
+                "label": "Min Document Frequency",
+                "description": "Min document frequency",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "placeHolder": "",
+                "type": "Double"
+            },
+            {
+                "id": "max_df",
+                "label": "Max Document Frequency",
+                "description": "Max document frequency",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "placeHolder": "",
+                "type": "Double"
+            },
+            {
+                "id": "max_features",
+                "label": "Max Features Number",
+                "description": "Max features number",
+                "mandatory": false,
+                "items": [],
+                "visibleOption": [],
+                "control": "InputBox",
+                "columnType": [],
+                "validation": [],
+                "type": "Integer"
+            }
+        ],
+        "inputs": {
+            "table": ""
+        }
+    },
+    "md": ""
+}
