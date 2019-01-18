@@ -2,7 +2,7 @@
 ### Python
 ```python
 from brightics.function.classification import svm_classification_predict
-res = svm_classification_predict(prediction_col = ,probability_col = ,log_probability_col = ,suffix = ,thresholds = ,group_by = )
+res = svm_classification_predict(prediction_col = ,probability_col = ,log_probability_col = ,suffix = ,thresholds = )
 res['out_table']
 ```
 
@@ -20,16 +20,18 @@ Predict data using a support vector classification model.
 #### Parameters
 1. **Prediction Column Name**: Prediction column name
    - Value type : String
+   - Default : prediction
 2. **Probability Column Prefix**: Probability Column Name
    - Value type : String
+   - Default : probability
 3. **Log Probability Column Prefix**: Log Probability Column Name
    - Value type : String
+   - Default : log_probability
 4. **Suffix Type**: Choose suffix type.
    - Available items
       - Index (default)
       - Label
 5. **Thresholds**: Thresholds used to predict.
-6. **Group By**: Columns to group by
 
 #### Outputs
 1. **out_table**: table
@@ -42,16 +44,18 @@ Predict data using a support vector classification model.
 #### Parameters
 1. **prediction_col**: Prediction column name
    - Value type : String
+   - Default : prediction
 2. **probability_col**: Probability Column Name
    - Value type : String
+   - Default : probability
 3. **log_probability_col**: Log Probability Column Name
    - Value type : String
+   - Default : log_probability
 4. **suffix**: Choose suffix type.
    - Available items
       - index (default)
       - label
 5. **thresholds**: Thresholds used to predict.
-6. **group_by**: Columns to group by
 
 #### Outputs
 1. **out_table**: table

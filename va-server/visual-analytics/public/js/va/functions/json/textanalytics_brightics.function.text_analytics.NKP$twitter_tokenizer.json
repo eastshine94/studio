@@ -5,8 +5,8 @@
     },
     "specJson": {
         "category": "textanalytics",
-        "func": "brightics.function.text_analytics.NKP$twitter_tokenizer26396",
-        "name": "brightics.function.text_analytics.NKP$twitter_tokenizer",
+        "func": "brightics.function.text_analytics.NKP$Twitter_Tokenizer26396",
+        "name": "brightics.function.text_analytics.NKP$Twitter_Tokenizer",
         "context": "python",
         "label": "Twitter Tokenizer",
         "description": "",
@@ -29,7 +29,7 @@
         "params": [
             {
                 "id": "input_col",
-                "label": "Input Column",
+                "label": "input col",
                 "description": "",
                 "mandatory": true,
                 "items": [],
@@ -43,7 +43,7 @@
             },
             {
                 "id": "token_col_name",
-                "label": "Token Column Name",
+                "label": "token col name",
                 "description": "",
                 "mandatory": false,
                 "items": [],
@@ -55,7 +55,7 @@
             },
             {
                 "id": "pos_col_name",
-                "label": "Pos Column Name",
+                "label": "pos col name",
                 "description": "",
                 "mandatory": false,
                 "items": [],
